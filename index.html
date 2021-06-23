@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morada | Em Construção</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+            padding: min(2em, 5vh) min(5em, 15vw) min(4em, 10vh);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            max-width: 720px;
+        }
+        
+        header h1 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #6D2D76;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0;
+            font-size: 3rem;
+        }
+        header h1 svg {
+            width: 2.5em;
+            height: auto;
+        }
+
+        header hr {
+            width: 2px;
+            height: 75%;
+            margin: 0 3.5rem;
+            border: none;
+            border-radius: 999px;
+            background-color: #6D2D76;
+        }
+
+        header span {
+            padding: 0.25em 0.75em;
+            font-size: 2.2rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+
+            color: #6D2D76;
+            position: relative;
+            transform: translate(-0.25em, -0.75em);
+        }
+        header span strong {
+            color: #FF895B;
+            font-weight: 700;
+        }
+        header span::before {
+            display: block;
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: #F5F1E9;
+
+            transform: translate(0.25em, 0.75em);
+        }
+
+        body > svg {
+            flex: 1;
+            padding: 5rem 0;
+            max-width: 720px;
+            max-height: 30vh;
+        }
+        
+        main {
+            max-width: 720px;
+        }
+
+        main h2 {
+            color: #FF895B;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.2rem;
+
+            position: relative;
+            width: max-content;
+            padding: 0.5em 2em 0.5em 0.75em;
+        }
+        main h2::before {
+            display: block;
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: #F5F1E9;
+
+            transform: translateY(-25%) scaleY(50%);
+        }
+
+        main p {
+            color: #2B2B2B;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        main p strong {
+            font-weight: 700;
+            color: #FF895B;
+        }
+
+        main a {
+            display: block;
+            width: max-content;
+            margin: auto;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #6D2D76;
+            text-decoration: none;
+            font-size: 1.2rem;
+            position: relative;
+            padding: 0.25em 1.5em;
+            
+            transition: color 0.2s ease-in;
+        }
+        main a::before {
+            display: block;
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: #FF895B;
+            
+            transition: background-color 0.2s ease-in, transform 0.2s ease-out;
+            transform: translate(-0.5em, -0.2em);
+        }
+
+        main a:hover, main a:focus{
+            outline: none;
+            color: #FF895B;
+        }
+        main a:hover::before, main a:focus::before{
+            background-color: #6D2D76;
+            transform: translate(0);
+        }
+
+        @media (max-width: 720px) {
+            body {
+                height: auto;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            header hr {
+                display: none;
+            }
+
+            header span {
+                font-size: 1.6rem;
+                margin-top: 1em;
+            }
+
+            body > svg {
+                margin: 3em 0;
+                padding: 2em;
+                min-height: 25vh;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <svg width="96" height="59" viewBox="0 0 96 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M95.7211 58.3197L76.4522 38.8916L95.7211 19.4636V58.3197ZM76.7503 38.8916L95.5016 57.7978V19.9774L76.7503 38.8916Z" fill="#6D2D76"/>
+                <path d="M57.5872 58.2131L38.424 38.8917L58.7171 18.431L58.7908 18.5054L58.7171 18.431L76.6013 0.399139L95.7596 19.7205L57.5872 58.2131ZM38.7221 38.8917L57.5872 57.9125L95.4663 19.7205L76.6013 0.699696L38.7221 38.8917Z" fill="#6D2D76"/>
+                <path d="M0.939164 38.8916L38.5731 0.948527L57.1913 19.7205L19.559 57.6636L0.939164 38.8916ZM0.149048 38.8916L19.559 58.4619L57.983 19.7205L38.5731 0.150269L0.149048 38.8916Z" fill="#FF895B"/>
+                <path d="M19.559 58.2131L0.400665 38.8917L38.5731 0.399139L57.7362 19.7205L19.559 58.2131ZM0.693957 38.8917L19.559 57.9125L57.4381 19.7205L38.5731 0.699696L20.8379 18.5813L20.7626 18.5054L20.8379 18.5813L0.693957 38.8917Z" fill="#6D2D76"/>
+                <path d="M95.6153 19.7205L76.6012 0.549408L58.7908 18.5054L57.5872 19.7205L38.5731 0.549408L20.7642 18.5054L0.544891 38.8916L19.559 58.0628L38.4977 38.9676L48.4952 48.9862L48.5176 48.9184L57.5872 58.0628L76.6461 38.8464L95.7211 58.3197L95.6153 19.7205Z" fill="#6D2D76"/>
+                <path d="M57.6913 58.3197L38.424 38.8916L57.6913 19.4636V58.3197ZM38.7221 38.8916L57.4734 57.7978V19.9774L38.7221 38.8916Z" fill="#6D2D76"/>
+                <path d="M39.1164 38.8917L39.7863 38.2162L57.2009 20.6578V57.132L39.1164 38.8917ZM77.1462 38.8917L95.2307 20.6578V57.132L77.1462 38.8917ZM1.08821 38.8917L38.5731 1.09881L57.0423 19.7205L38.0282 38.8917L19.559 57.5134L1.08821 38.8917ZM57.9718 19.8805L76.6013 1.09881L95.0704 19.7205L94.4134 20.383L57.9718 57.132V19.8805ZM76.6013 0.00484752L57.5872 19.1711L38.5731 0L0 38.8917L19.5526 58.6057L38.5731 39.4411L57.5872 58.6122L57.8356 58.3617L76.6013 39.4411L95.9936 58.9935V19.5589L76.6013 0.00484752Z" fill="#FF895B"/>
+            </svg>
+            Morada
+        </h1>
+        <hr>
+        <span> <strong>Viver</strong> ficou tão simples quanto sonhar </span>
+    </header>
+    <svg width="550" height="342" viewBox="0 0 550 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M438.675 245.794L547.5 105.823L383.887 10.5072L276.188 149.728L438.675 245.794ZM462.831 175.621L493.838 137.224L447.221 111.076L416.535 149.268L462.831 175.621ZM416.535 95.1947L385.227 133.592L338.481 107.239L369.465 69.0476L416.535 95.1947Z" fill="white"/>
+        <path d="M547.5 105.823L549.474 107.357C549.916 106.788 550.091 106.056 549.954 105.348C549.817 104.64 549.381 104.026 548.758 103.663L547.5 105.823ZM438.675 245.794L437.403 247.946C438.486 248.587 439.876 248.322 440.649 247.329L438.675 245.794ZM383.887 10.5072L385.146 8.34707C384.062 7.71555 382.678 7.98525 381.91 8.97755L383.887 10.5072ZM276.188 149.728L274.211 148.198C273.772 148.766 273.598 149.494 273.733 150.198C273.868 150.903 274.299 151.515 274.916 151.88L276.188 149.728ZM493.838 137.224L495.783 138.794C496.246 138.222 496.432 137.474 496.293 136.751C496.154 136.028 495.703 135.403 495.061 135.043L493.838 137.224ZM462.831 175.621L461.594 177.794C462.659 178.4 464.006 178.145 464.776 177.192L462.831 175.621ZM447.221 111.076L448.444 108.896C447.378 108.298 446.037 108.558 445.272 109.511L447.221 111.076ZM416.535 149.268L414.586 147.702C414.127 148.273 413.942 149.016 414.079 149.736C414.216 150.455 414.662 151.078 415.298 151.441L416.535 149.268ZM385.227 133.592L383.999 135.77C385.059 136.367 386.396 136.115 387.164 135.172L385.227 133.592ZM416.535 95.1947L418.472 96.7746C418.94 96.201 419.13 95.4497 418.99 94.723C418.85 93.9962 418.396 93.3687 417.749 93.0093L416.535 95.1947ZM338.481 107.239L336.54 105.664C336.076 106.236 335.888 106.983 336.025 107.706C336.163 108.429 336.612 109.055 337.253 109.417L338.481 107.239ZM369.465 69.0476L370.679 66.8621C369.618 66.2729 368.288 66.5303 367.524 67.4725L369.465 69.0476ZM545.526 104.288L436.701 244.26L440.649 247.329L549.474 107.357L545.526 104.288ZM382.629 12.6674L546.242 107.983L548.758 103.663L385.146 8.34707L382.629 12.6674ZM278.166 151.258L385.865 12.0369L381.91 8.97755L274.211 148.198L278.166 151.258ZM439.947 243.642L277.46 147.576L274.916 151.88L437.403 247.946L439.947 243.642ZM491.893 135.653L460.886 174.05L464.776 177.192L495.783 138.794L491.893 135.653ZM445.998 113.257L492.615 139.404L495.061 135.043L448.444 108.896L445.998 113.257ZM418.484 150.834L449.17 112.642L445.272 109.511L414.586 147.702L418.484 150.834ZM464.068 173.448L417.772 147.095L415.298 151.441L461.594 177.794L464.068 173.448ZM387.164 135.172L418.472 96.7746L414.597 93.6149L383.289 132.012L387.164 135.172ZM337.253 109.417L383.999 135.77L386.455 131.414L339.709 105.061L337.253 109.417ZM367.524 67.4725L336.54 105.664L340.422 108.814L371.406 70.6226L367.524 67.4725ZM417.749 93.0093L370.679 66.8621L368.251 71.233L415.321 97.3802L417.749 93.0093Z" fill="#FF895B"/>
+        <path d="M111.825 245.794L3 105.823L166.613 10.5072L274.312 149.728L111.825 245.794Z" fill="white" stroke="#FF895B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M275.625 341.485L113.326 245.53L276.001 150.854L437.925 245.53L275.625 341.485Z" fill="#FF895B"/>
+        <ellipse cx="273.937" cy="245.794" rx="109.575" ry="30.3959" fill="#6D2D76"/>
+        <path d="M171.207 112.487L171.206 112.486C146.066 87.3463 146.066 46.435 171.206 21.2949C196.303 -3.80235 238.718 -2.38376 262.397 21.2953C274.401 33.3 279.765 44.9462 281.459 55.8156C283.161 66.7387 281.201 77.1514 278.097 86.7367L277.531 88.4837L278.83 89.7823L354.826 165.779C355.415 166.368 355.745 167.163 355.745 167.995V202.7C355.745 204.434 354.344 205.834 352.61 205.834H317.906C317.074 205.834 316.279 205.505 315.691 204.916C315.69 204.916 315.69 204.916 315.69 204.916L307.016 196.235L307.015 196.235C306.34 195.559 306.008 194.61 306.119 193.656L307.197 184.335L307.549 181.29L304.498 181.003L291.582 179.787L291.581 179.787C290.081 179.646 288.899 178.464 288.758 176.963L288.758 176.963L287.542 164.047L287.254 160.994L284.208 161.348L274.886 162.432L274.859 162.435L274.832 162.439C274.03 162.547 273.147 162.284 272.441 161.662C271.771 161.059 271.392 160.207 271.392 159.319V147.897V144.897H268.392H257.177C256.345 144.897 255.55 144.567 254.961 143.979L254.954 143.972L254.947 143.964L239.215 128.441L237.917 127.16L236.182 127.722C213.192 135.176 188.352 129.644 171.207 112.487Z" fill="white" stroke="#6D2D76" stroke-width="6"/>
+        <path d="M211.403 61.4927C204.812 68.084 194.091 68.084 187.5 61.4927C187.5 61.4927 187.5 61.4927 187.5 61.4927C180.909 54.9014 180.909 44.1811 187.5 37.5899C194.091 30.9986 204.812 30.9986 211.403 37.5899C217.994 44.1812 217.994 54.9014 211.403 61.4927Z" fill="white" stroke="#6D2D76" stroke-width="3"/>
+        <path d="M344.908 206.989L242.517 104.598" stroke="#6D2D76" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M354.133 202.377L261.427 109.672" stroke="#6D2D76" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <main>
+        <h2>Em Construção...</h2>
+        <p>Em breve ajudando você a conquistar a <strong>sua</strong> Morada. Estamos construindo um produto que vai revolucionar o mercado immobiliário, enquanto isso nos visite em </p>
+        <a href="https://meuprimeiroape.com.br">meuprimeiroape.com.br</a>
+    </main>
+</body>
+</html>
